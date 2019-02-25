@@ -1,4 +1,4 @@
-package pjs.cje.sinnaHotel;
+package cje.pjs.sinnahotel;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -24,7 +24,7 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-		logger.info("난 박지수{}.", locale);
+		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);

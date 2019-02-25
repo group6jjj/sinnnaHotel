@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="cje.pjs.sinnahotel.vo.MemberVO" alias="member"></typeAlias>
+		<typeAlias type="cje.pjs.sinnahotel.vo.AnswerVO" alias="answer"></typeAlias>
+		<typeAlias type="cje.pjs.sinnahotel.vo.HotelinfoVO" alias="hotelinfo"></typeAlias>
+		<typeAlias type="cje.pjs.sinnahotel.vo.QuestionVO" alias="question"></typeAlias>
+		<typeAlias type="cje.pjs.sinnahotel.vo.ReservationVO" alias="reservation"></typeAlias>
+		<typeAlias type="cje.pjs.sinnahotel.vo.ReviewVO" alias="review"></typeAlias>
+		<typeAlias type="cje.pjs.sinnahotel.vo.RoominfoVO" alias="roominfo"></typeAlias>
+	</typeAliases>
+	<mappers>
+		<mapper resource="hotelinfoMapper.xml" />
+		<mapper resource="roominfoMapper.xml" />
+		<mapper resource="memberMapper.xml" />
+		<mapper resource="questionMapper.xml" />
+		<mapper resource="answerMapper.xml" />
+		<mapper resource="reservationMapper.xml" />		
+		<mapper resource="reviewMapper.xml" />		
+	</mappers>
+</configuration>
